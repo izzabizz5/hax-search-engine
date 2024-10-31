@@ -79,6 +79,9 @@ export class HaxSearchEngine extends DDDSuper(I18NMixin(LitElement)) {
     return new URL(`./lib/${this.tag}.haxProperties.json`, import.meta.url)
       .href;
   }
+  static get tag() {
+    return 'hax-search-engine';
+  }
 }
 
 globalThis.customElements.define(HaxSearchEngine.tag, HaxSearchEngine);
